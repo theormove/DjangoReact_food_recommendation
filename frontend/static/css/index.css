@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&family=Rubik+Bubbles&display=swap');
+
+html, body, main{
+	height:  100%;
+	width:  100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;		
+}
+
+body{
+	background-image: url("../img/background.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.app-container{
+	height:  100%;
+	width:  65%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-color: rgb(255,165,0,0.95);	
+}
+
+.search-area-container{
+	font-family: 'Rubik Bubbles', cursive;
+}
+
+.result-area-container{
+	font-family: 'Rowdies', cursive;
+}
+
+.table{
+	margin-top: 10px;
+}
+
+.recom-img{
+	height: 20%;
+	width: 25%;
+
+}
+
+.chosen-img{
+	height: 10%;
+	width: 15%;
+}
+
+.recommended-img{
+	height: 20%;
+	width: 20%;
+}
+
+.dropdown-item{
+	background-color: white;
+}
+
+
+
