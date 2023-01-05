@@ -21,5 +21,8 @@ def make_prediction(dishes_set):
 		prediction = random.choice(possible_prediction_ids)
 	#if there is no dishes to offer returns last 
 	else:
-		prediction = dishes_set["incorrect_guesses"][0]		
+		try:
+			prediction = dishes_set["incorrect_guesses"][0]		
+		except:
+			prediction = None
 	return prediction

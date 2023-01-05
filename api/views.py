@@ -18,7 +18,6 @@ class DishSetView(mixins.CreateModelMixin,
 	
 	def post(self, request, *args, **kwargs):
 		data = request.data
-		print(request.data)
 		dishes_set = self.create(request, *args, **kwargs)
 		prediction = make_prediction(data)
 		response_dict = {
