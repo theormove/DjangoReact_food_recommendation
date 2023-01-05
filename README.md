@@ -1,5 +1,5 @@
 # DjangoReact_food_recommendation
-This project was built to get hands-on experience with implementing React in Django and also to help people chose their meal if they are hesitant.
+This project was built to get hands-on experience with implementing React in Django and also to help people choose their meal if they are hesitant.
 The idea of this project is that people choose what they surely do not want to eat and this service gives recommendation on what they might like.
 
 # Stack
