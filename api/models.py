@@ -18,6 +18,6 @@ class DishSet(models.Model):
 	incorrect_guesses = models.JSONField(default=jsonfield_default_value)
 	
 	def __str__(self):
-		return self.pk
+		return str(self.pk)
 
 		
