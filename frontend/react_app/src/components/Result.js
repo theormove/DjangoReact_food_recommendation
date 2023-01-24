@@ -34,24 +34,25 @@ export default function Result(props) {
 	}	
 	
 	return(
-		<div className= "result-area-container">
+		<div className= "result-area-container">	
 			{dish_prediction.predictions.map((item) => (
 			<div>
+				<h1> Would you like to eat {item.name}? </h1>
 				<div>
 	            	<img src = {item.picture} className="recommended-img"/>
 	            </div>
 	            <div>
-	            	{item.name}
-	            </div>	
-	            <div>
+					<span className="col"></span>
 		        	<span className="col"><button 
-									className="btn btn-success my-3 mx-4" onClick={() => onCorrectPrediction()} >Yammy!</button></span>
+									className="btn btn-success my-3 mx-4 px-4 py-3" onClick={() => onCorrectPrediction()} >Yes!</button></span>
 		        	<span className="col"><button  
-		        					className="btn btn-danger"  onClick={() => onIncorrectPrediction()}>Nah, thanks</button></span>
-	        	</div>
+		        					className="btn btn-danger  my-3 mx-4 px-4 py-3"  onClick={() => onIncorrectPrediction()}>No</button></span>
+	        		<span className="col"></span>
+				</div>
         	</div>				
         	))
-        	}				
+        	}	
+			<a href="/" class="bottom-0">Go back to search</a>			
         </div>
 	);
 }

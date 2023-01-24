@@ -27,6 +27,7 @@
     "check-node-version": "^4.2.1",
     "fs-extra": "^11.1.0",
     "fs-promise": "^2.0.3",
+    "react-native-web": "^0.18.10",
     "react-router-dom": "^6.6.1"
   }
 }

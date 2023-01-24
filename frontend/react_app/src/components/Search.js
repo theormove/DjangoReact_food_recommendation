@@ -56,8 +56,9 @@ export default function Search(props) {
 		},[]);
 
 	return (
-	<div className="search-area-container position-relative">
+	<div className="search-area-container position-relative d-flex flex-column">
 			        <h1 id="title" className="py-5">What you do not want to eat?</h1>
+					<h4 class="py-3">Enter foods you do not want to eat or just simply press the button to get random suggestion</h4>
 					<div className="form-group row align-items-center">  
 						<div className="col-1">
 						</div>

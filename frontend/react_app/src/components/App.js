@@ -8,7 +8,16 @@ export default function App(props) {
 	const [search_request, setSearchRequest] = useState([]); 
 	const [all_dishes, setAllDishes] = useState([]);
 
-	return (<div className="app-container d-flex flex-column justify-content-center">  
+	return (
+
+		<div className="app-container d-flex flex-column position-relative">  
+				<div id = "info" className="position-relative d-flex justify-content-end top-0 end-0 mx-3 my-3 ">
+					<span>&#9432;</span>
+					<div id = "info-text" className="position-absolute ">
+						<div id = "info-text-wrapper" className="bg-white">This website helps you deciding what to eat if you do not know.<br />
+						Simply search foods you do not want to eat and the algorithm will give you a suggestion.<br/>
+						If you still do not feel like eating what we recommended just press "No" to give you another suggestion taking into account what you have declined.</div></div>
+				</div>
 				<BrowserRouter>
 			        <Routes>
 
@@ -19,6 +28,7 @@ export default function App(props) {
 						
 					</Routes>
 		      	</BrowserRouter>
-			</div>
+		</div>
+		
 	);
 }
