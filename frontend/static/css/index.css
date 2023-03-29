@@ -91,3 +91,11 @@ body{
 	opacity: 1;
 }	
 
+@media only screen and (max-width: 768px) {
+	.app-container{
+		width:  100%;
+	}
+	input::placeholder{
+		font-size: 13px;
+	}		
+  }

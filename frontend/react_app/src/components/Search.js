@@ -56,15 +56,13 @@ export default function Search(props) {
 		},[]);
 
 	return (
-	<div className="search-area-container position-relative d-flex flex-column">
+	<div className="search-area-container container position-relative d-flex flex-column">
 			        <h1 id="title" className="py-5">What you do not want to eat?</h1>
 					<h4 class="py-3">Enter foods you do not want to eat or just simply press the button to get random suggestion</h4>
-					<div className="form-group row align-items-center">  
-						<div className="col-1">
-						</div>
-						<div className="col-9">
+					<div className="row container-fluid">  
+						<div className="col-10">
 							<input type="text" value={value} onChange={onChange} className="form-control align-items-center" placeholder="Something you do not want"></input>
-							<div className="dropdown position-absolute col-9"> 
+							<div className="dropdown position-absolute col-10"> 
 									{dishes.filter(item =>{
 										const searchTerm = value.toLowerCase();
 										const dishName = item.name.toLowerCase();
@@ -76,8 +74,8 @@ export default function Search(props) {
 									))}
 							</div>
 						</div>
-						<div className="col-1">
-							<button onClick={() => onSearch(value)} className="btn btn-primary py-2 px-5">Add</button>
+						<div className="col-2">
+							<button onClick={() => onSearch(value)} className="btn btn-primary ">Add</button>
 						</div>				
 					</div>
 				<table className="table align-middle">
