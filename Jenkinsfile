@@ -15,7 +15,7 @@ pipeline {
         stage('Build') { 
             steps { 
                 script{
-                 app = docker.build("underwater")
+                 app = docker.build("donotknowwhattoeat")
                 }
             }
         }
@@ -27,9 +27,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 script{
-                        docker.withRegistry('https://708243111202.dkr.ecr.eu-north-1.amazonaws.com/donotknowwhattoeat', 'ecr:eu-north-1:aws-credentials') {
-                    app.push("${env.BUILD_NUMBER}")
-                    app.push("latest")
+                        docker.withRegistry('https://708243111202.dkr.ecr.eu-north-1.amazonaws.com', 'ecr:eu-north-1:aws-credentials') {
+                    app.push("django")
                     }
                 }
             }
